@@ -7,6 +7,6 @@
 	<meta name="viewport" content="width=device-width">
 </head>
 <body>
-	Hola este es mio sitio web
+	<?= $greeting . " " . $thing ?>
 </body>
 </html>

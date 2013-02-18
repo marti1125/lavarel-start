@@ -33,14 +33,22 @@
 */
 
 Route::get('/', function()
-{
-    return View::make('home.index');
+{   
+    /*$data = array(
+        'greeting' => "hello",
+        'thing' => "world"
+    );*/
+    
+    $view = View::make('home.index');
+    $view->greeting = "Hola";
+    $view->thing = "a todos";
+    return $view;
 });
 
-Route::get('about', function()
+/*Route::get('about', function()
 {
     return View::make('home.about');
-});
+});*/
 
 /*
 |--------------------------------------------------------------------------
