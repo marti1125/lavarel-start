@@ -34,7 +34,12 @@
 
 Route::get('/', function()
 {
-	return View::make('home.index');
+    return View::make('home.index');
+});
+
+Route::get('about', function()
+{
+    return View::make('home.about');
 });
 
 /*
