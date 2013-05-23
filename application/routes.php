@@ -39,7 +39,7 @@ Route::get('/', function()
         'thing' => "world"
     );*/
     
-    $view = View::make('home.index');
+    $view = View::make('home.index', array('items' => array('item1','item2','item3')));
     $view->greeting = "Hola";
     $view->thing = "a todos";
     return $view;
